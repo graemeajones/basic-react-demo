@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+div.layout {
+  background: red;
+
+  main { 
+    padding: 20px; 
+    background: White;
+
+    div.cardContainer {
+      border: 1px solid LightGray;
+      border-radius: 3px;
+      padding: 20px 20px;
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      div.moduleCard {
+        width: 250px;
+        height: 270px;
+      }
+
+      div.studentCard {
+        width: 200px;
+      }
+    
+      div.moduleCard,
+      div.studentCard {
+        padding: 10px;
+        border: 1px solid LightGray;
+        border-radius: 5px;
+        box-shadow: 4px 4px 8px 4px rgba(70,70,70,0.3);
+    
+        img { width: 100%; display: block; border-radius: 0px 0px 3px 3px }
+      }
+    }
+  }
+}
+      
