@@ -106,10 +106,10 @@ function OriginalApp() {
       </header>
 
       <nav>
-        <div className="navItem " id="modules">
+        <div className="navItem" id="modules">
           <a>Modules</a>
         </div>
-        <div className="navItem id=students">
+        <div className="navItem" id="students">
           <a>Students</a>
         </div>
       </nav>
@@ -121,9 +121,11 @@ function OriginalApp() {
             modulelist.map((module) => {
               return (
                 <div className="moduleCard">
-                  <p>{module.ModuleCode}</p>
-                  <p>{module.ModuleName}</p>
-                  <img src={module.ModuleImageURL} alt={module.ModuleName} />
+                  <div className="card">
+                    <p>{module.ModuleCode}</p>
+                    <p>{module.ModuleName}</p>
+                    <img src={module.ModuleImageURL} alt={module.ModuleName} />
+                  </div>
                 </div>
               )
             })
@@ -136,9 +138,11 @@ function OriginalApp() {
             studentlist.map((student) => {
               return (
                 <div className="studentCard">
-                  <p>{student.UserEmail.substring(0,8)}</p>
-                  <p>{`${student.UserFirstname} ${student.UserLastname}`}</p>
-                  <img src={student.UserImageURL} alt={student.UserEmail.substring(0, 8)} />
+                  <div className="card">
+                    <p>{student.UserEmail.substring(0,8)}</p>
+                    <p>{`${student.UserFirstname} ${student.UserLastname}`}</p>
+                    <img src={student.UserImageURL} alt={student.UserEmail.substring(0, 8)} />
+                  </div>
                 </div>
               )
             })
