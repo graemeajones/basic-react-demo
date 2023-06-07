@@ -106,10 +106,10 @@ function OriginalApp() {
       </header>
 
       <nav>
-        <div className="navItem " id="modules">
+        <div className="navItem">
           <a>Modules</a>
         </div>
-        <div className="navItem id=students">
+        <div className="navItem">
           <a>Students</a>
         </div>
       </nav>

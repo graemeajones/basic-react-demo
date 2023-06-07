@@ -4,4 +4,4 @@ import App from './App.js';
 import OriginalApp from './OriginalApp.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( <OriginalApp /> );
+root.render( <App /> );
