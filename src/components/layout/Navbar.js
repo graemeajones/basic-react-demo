@@ -5,10 +5,10 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="navItem " id="modules">
+      <div className="navItem">
         <NavLink to="/">Modules</NavLink>
       </div>
-      <div className="navItem id=students">
+      <div className="navItem">
         <NavLink to="/students">Students</NavLink>
       </div>
     </nav>
