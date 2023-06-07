@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout.js';
+import Home from './components/pages/Home.js';
 import Modules from './components/pages/Modules.js';
 import Students from './components/pages/Students.js';
 
@@ -10,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Layout loggedInUser={loggedInUser}>
         <Routes>
-          <Route path='/' element={<Modules />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/modules' element={<Modules />} />
           <Route path='/students' element={<Students />} />
         </Routes>
       </Layout>
