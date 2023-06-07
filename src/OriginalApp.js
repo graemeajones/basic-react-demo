@@ -120,7 +120,7 @@ function OriginalApp() {
           {
             modulelist.map((module) => {
               return (
-                <div className="moduleCard">
+                <div className="moduleCard card">
                   <p>{module.ModuleCode}</p>
                   <p>{module.ModuleName}</p>
                   <img src={module.ModuleImageURL} alt={module.ModuleName} />
@@ -135,7 +135,7 @@ function OriginalApp() {
           {
             studentlist.map((student) => {
               return (
-                <div className="studentCard">
+                <div className="studentCard card">
                   <p>{student.UserEmail.substring(0,8)}</p>
                   <p>{`${student.UserFirstname} ${student.UserLastname}`}</p>
                   <img src={student.UserImageURL} alt={student.UserEmail.substring(0, 8)} />
