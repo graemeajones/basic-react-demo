@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout.js';
-import Home from './components/pages/Home.js';
-import Modules from './components/pages/Modules.js';
-import Students from './components/pages/Students.js';
+import Home from './components/views/Home.js';
+import Modules from './components/views/Modules.js';
+import Students from './components/views/Students.js';
 
 function App() {
   const loggedInUser = 'Graeme';
